@@ -1,0 +1,10 @@
+apiVerion: v1
+kind: Services
+spec:
+  selector:
+    app: gitops-mastery
+  ports:
+    - protocol: TCP
+      port: 80
+      targetport: 8080
+  type: ClusterIP
