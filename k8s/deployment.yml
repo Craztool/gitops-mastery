@@ -17,3 +17,10 @@ spec:
           image: ghcr.io/craztool/gitops-mastery:452270bfaa8cd9f9b8a954949490ee2c897f9bd9
           ports:
             - containerPort: 8080
+          resources:
+            requests:
+              cpu: "100m"
+              memory: "128Mi"
+            limits:
+              cpu: "200m"
+              memory: "256Mi"
