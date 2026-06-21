@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
         - name: practice-container
-          image: ghcr.io/craztool/gitops-mastery:452270bfaa8cd9f9b8a954949490ee2c897f9bd9
+          image: ghcr.io/craztool/gitops-mastery:15c7c435cfafb27cbe1237029e66fc4a171e8a8e
           ports:
             - containerPort: 8080
