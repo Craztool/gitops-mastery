@@ -1,21 +1,19 @@
-apiVerion: v1
+apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name:gitpos-mastery-Deployment
-
+  name: gitops-mastery-deployment
 spec:
   replicas: 1
   selector:
     matchLabels:
       app: gitops-mastery
   template:
-    metadata: manual git ops
+    metadata:
       labels:
         app: gitops-mastery
-
     spec:
       containers:
         - name: practice-container
           image: ghcr.io/craztool/gitops-mastery:latest
           ports:
-          - containerPort: 8080
+            - containerPort: 8080

@@ -1,10 +1,12 @@
-apiVerion: v1
-kind: Services
+apiVersion: v1
+kind: Service
+metadata: 
+  name: gitops-mastery-service
 spec:
   selector:
     app: gitops-mastery
   ports:
     - protocol: TCP
       port: 80
-      targetport: 8080
+      targetPort: 8080
   type: ClusterIP
